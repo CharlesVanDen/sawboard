@@ -23,24 +23,24 @@ If the pcb does not fit in the case any more, find a suitable place to cut the p
 
 Remove the cable with the PS2 plug and make connections between the Arduino Pro Micro and where the cable used to be as follows:
 *  DIN-connector PINs (AT keyboard) | MINI-DIN (PS2) | Arduino pin | function
- *  1  |  5  | D9 | clock
- *  2  |  1  | D8 | data
- *  3  | 2,6 |    | n.c.
- *  4  |  3  |    | gnd
- *  5  |  4  |VCC | vcc (+5V)
- *     |     |D10| debug-line
- *  
- *  Thanks to http://www.computer-engineering.org/ps2protocol/
+*  1  |  5  | D9 | clock
+*  2  |  1  | D8 | data
+*  3  | 2,6 |    | n.c.
+*  4  |  3  |    | gnd
+*  5  |  4  |VCC | vcc (+5V)
+*     |     |D10| debug-line
+  
+Thanks to http://www.computer-engineering.org/ps2protocol/
  
 Put the keypad together. Place the following keycaps in stead of the original ones. Each key functions as its CTRL-version, so for example the X, C and V keys on the bottom row will generate CTRL/X, CTRL/C and CTRL/V.
  
- Keypad layout
+Keypad layout
  
- F1 F2 F3 F4
- Y  U  P  +
- F  A  S  +
- X  C  V  
- 0  0  .  Enter
+* F1 F2 F3 F4
+* Y  U  P  +
+* F  A  S  +
+* X  C  V  
+* 0  0  .  Enter
  
 Connect the USB cable, load the arduino sketch Controlboard.ino into the Arduino Pro Micro and you are ready to go!
  
